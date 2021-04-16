@@ -32,11 +32,10 @@ document.addEventListener('DOMContentLoaded', function(){
             descr.className = 'descr';
             descr.id = 'descrizione'+i;
             descr.textContent = descrizione[i];
-            console.log(nomiTrad[h1.textContent]);
-            
-            console.log(rest_url);
             div.appendChild(descr);
 
         prodGrid.appendChild(div);
+        /*var ar = */searchNutrient(nomiTrad[h1.textContent]);
+        //console.log(ar);
     }
 }, false);

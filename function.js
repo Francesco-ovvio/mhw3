@@ -81,23 +81,3 @@ function remFav(id){
         document.getElementById('favSection').style.display = 'none';
     }
 }
-
-function searchNutrient(id){
-    rest_url = 'https://api.nutritionix.com/v1_1/search/'+id+'?results=0:1&fields=item_name,brand_name,item_id,nf_calories,nf_total_fat,nf_protein,nf_total_carbohydrate&appId='+APPID+'&appKey='+APPKEY;
-    fetch(rest_url).then(onResponse).then(onJson);
-}
-
-function onResponse(response){
-    console.log("ha risposto");
-    return response.json();
-}
-
-function onJson(json){
-    /*creare una tabella dove inserisco i nutrienti e tornarla con return*/
-    var ul = document.createElement('ul');
-        var kcal = document.createElement('li');
-        kcal.textContent = 'KCal: '+json.hits[0].fields.nf_calories;
-        ul.appendChild(kcal);
-    return ul;
-    //console.log(json.hits[0].fields.nf_protein);
-}

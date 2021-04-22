@@ -313,6 +313,13 @@ section.type-c p strong{
     margin-top: 15px;
     display: none;
 }
+.product ul{
+    margin: 10px;
+}
+
+.product li{
+    font-family: 'Segoe UI', sans-serif;
+}
 
 /* Impostazioni del footer */
 .warpflex .foot{

@@ -20,7 +20,9 @@ const nomiTrad = {
     "Riso": "rice",
     "Provola": "provolone",
 }
-var countItem;
+
+let rest_url_weath;
+let citta;
 let resp = new Array;
 const APPID = 'c3b1c165';
 const APPKEY = 'f580e7ae4bbf4739c53ea431460e3702';
